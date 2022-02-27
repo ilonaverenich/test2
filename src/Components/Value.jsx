@@ -11,7 +11,7 @@ const Value = () => {
    useEffect(() => console.log('-----------'), [random])
 
    let check = () => {
-      return value === random ? setValue('Ты угадал') : setValue('Ты не угадал, попробуй еще раз!)')
+      return value == random ? setValue('Ты угадал') : setValue(`Ты не угадал, попробуй еще раз!) Правильное число ${random} `)
    }
    console.log(random)
    return (
