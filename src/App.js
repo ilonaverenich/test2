@@ -1,26 +1,24 @@
-import React, {useState,Fragment} from 'react';
+import React from 'react';
 import './App.css';
+import Likes from './Components/Likes';
+import Value from './Components/Value';
+import Name from './Components/Name';
+import Effect from './Components/Effect';
+import Pointer from './Components/Pointer';
 
 
-const Components =()=>{
-  const [text,setText]= useState('');
-  const valid = (e)=>{
-    e.length<5 ?  setText(e): setText('error')
-  }
-  return (
-    <>
-        {text}
-        <input onChange={(event)=>valid(event.target.value)}value = {text}/>
-    </>
-  )}
 
 
 function App() {
 
   return (
-      <div>
-          <Components name={'Ilona'}/>
-      </div>
+  <div className='container'>
+      <Likes/> 
+      <Value/> 
+      <Name/>
+      <Effect/>
+      <Pointer/>
+  </div>
   );
 }
 
