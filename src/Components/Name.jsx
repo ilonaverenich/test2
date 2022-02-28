@@ -18,7 +18,7 @@ const Name = () => {
    return (
       <div className="block-1 orange">
          <h3>Изменение названия</h3>
-         <button onClick={() => updateTitle()}>Изменить название</button>
+         <button onClick={() => updateTitle()}>Изменить</button>
          <pre>{JSON.stringify(state, null, 1)}</pre>
       </div >
 

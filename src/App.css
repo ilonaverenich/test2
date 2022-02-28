@@ -31,10 +31,30 @@
   border: 1px solid rgb(255, 101, 30);
 }
 
+
 .blue {
   border: 1px solid rgb(30, 83, 255);
 }
 
-.yellow {
-  border: 1px solid rgb(253, 249, 10);
+button {
+  border: 2px solid rgb(253, 249, 10);
+  width: 10em;
+  padding: 10px 10px;
+  margin: 0px 10px;
+}
+
+input {
+  border: 2px solid rgb(253, 10, 63);
+  width: 20em;
+  height: 2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  input {
+    margin: 10px;
+  }
+
+  .block-1 {
+    overflow: auto
+  }
 }
